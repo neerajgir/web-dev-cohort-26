@@ -1,4 +1,6 @@
-# 🎓 Cohort
+# 🎓 Web Dev Cohort 2026 - Learning Journey
+
+![alt text](web-dev-cohort-26/541118218-cbe836b7-3231-467d-9d53-76d7dcf1e2da.png)
 
 A comprehensive collection of **learning materials, coding challenges, and practical projects** designed to build a strong foundation in web development fundamentals and JavaScript.
 
