@@ -1,0 +1,891 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./fonts/CursorGothic-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./fonts/CursorGothic-Italic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./fonts/CursorGothic-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CursorGothic;
+    src: url('./fonts/CursorGothic-BoldItalic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Cursors;
+    src: url('/Cursor/CursorGothic-main/fonts/Cursors.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #14120B;
+    max-width: 1800px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #14120B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.nav .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.nav .logo #cursor-icon {
+    width: 100px;
+    height: 50px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #EDECEC;
+    font-size: 25px;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul li a:hover {
+    color: #D7D6D5;
+}
+
+.nav button {
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #14120B;
+    background-color: #EDECEC;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.nav .button-1 {
+    background-color: #1B1913;
+    color: #EDECEC;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    width: 110px;
+}
+
+.nav .button-1:hover{
+    background-color: #302e26;
+    color: #FFFFFF;
+}
+
+.nav .button-2:hover {
+    background-color: #D7D6D5;
+    color: #14120B;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #14120B;
+}
+
+.hero-main pre {
+    color: #EDECEC;
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin: 50px;
+    padding: 50px;
+    padding-top: 300px;
+}
+
+.hero-main pre span {
+    color: #EDECEC;
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-left: -110px;
+    padding: 50px;
+}
+
+
+.hero-main #cta {
+    height: 70px;
+    width: 350px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #14120B;
+    background-color: #EDECEC;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.hero-main #cta span {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.hero-main #cta:hover {
+    background-color: #D7D6D5;
+    color: #14120B;
+}
+
+.hero-main img {
+    height: 800px;
+    width: 1800px;
+    margin: 80px;
+    margin-left: 100px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.trusted-by-logos h2 {
+    text-align: center;
+    color: #EDECEC;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;;
+    margin-top: 500px;
+    margin-bottom: -50px;
+}
+
+.trusted-by-logos {
+    background-color: #14120B;
+    width: 1800px;
+    margin: 50px auto;
+    padding: 17px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trusted-by-logos .coursal {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin: 50px;
+    padding: 50px;
+}
+.trusted-by-logos img {
+    width: 220px;
+    height: 150px;
+    background-color: #1B1913;
+    color: #EDECEC;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.sections {
+    background-color: #1D1B15;
+    height: 800px;
+    width: 1800px;
+    margin: 50px auto;
+    padding: 17px;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.sections:hover {
+    background-color: #25231c;
+}
+
+.side-1 {
+    width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+}
+
+.side-1 p {
+    color: #9A998E;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+.side-1 p span {
+    color: #EDECEC;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+
+.side-1 a {
+    color: #f54e00;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 30px;
+}   
+
+.side-1 a:hover {
+    color: #9B2C0C;
+}
+
+.side-2 img {
+    width: 1300px;
+    height: 765px;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+}
+
+.sections-2 {
+    background-color: #1D1B15;
+    height: 800px;
+    width: 1800px;
+    margin: 50px auto;
+    padding: 17px;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.side-4 {
+    width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.side-4 p {
+    color: #9A998E;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+.side-4 p span {
+    color: #EDECEC;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+
+.side-4 a {
+    color: #f54e00;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 30px;
+}   
+
+.side-4 a:hover {
+    color: #9B2C0C;
+}
+
+.side-3 img {
+    width: 1300px;
+    height: 765px;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+}
+
+.sections-2:hover {
+    background-color: #25231c;
+}
+
+h1{
+    color: #EDECEC;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+.review-section {
+    background-color: #14120B;
+    height: 800px;
+    width: 1800px;
+    margin: 50px auto;
+    padding: 17px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.card {
+    background-color: #1B1913;
+    border-radius: 5px;
+    padding: 20px;
+    height: 350px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    color: #EDECEC;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  background: #222;
+}
+
+.author h4 {
+    color: #EDECEC;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.author span {
+  font-size: 12px;
+  color: #969393;
+}
+
+.head-text{
+    color: #EDECEC;
+    font-size: 35px;
+    line-height: 32.5px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.frontier {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.frontier .div1 {
+    background-color: #1B1913;
+    border-radius: 5px;
+    padding: 20px;
+    height: 800px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.div1 p {
+    color: #9A998E;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+.div1 p span {
+    color: #EDECEC;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+
+.div1 a {
+    color: #f54e00;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 30px;
+}   
+
+.div1 a:hover {
+    color: #9B2C0C;
+}
+
+.frontier .div1:hover {
+    background-color: #25231c;
+    cursor: pointer;
+}
+
+.frontier .div1 img {
+    border-radius: 10px;
+}
+
+.logs {
+    color: #EDECEC;
+    font-size: 40px;
+    line-height: 32.5px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 150px;
+    margin-left: 155px;
+}
+
+
+.changelog {
+    background-color: #14120B;
+    height: 200px;
+    width: 1800px;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 140px;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.changelog .log1 {
+    background-color: #1B1913;
+    border-radius: 5px;
+    padding: 20px;
+    height: 170px;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.changelog .log1 .head {
+    display: flex;
+    flex-direction: row;
+}
+
+.changelog .log1 .head span {
+    text-align: center;
+    color: #9A998E;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-left: 20px;
+}
+.changelog .log1 .head-1 span {
+    text-align: center;
+    color: #9A998E;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.changelog .log1 .head p {
+    width: 70px;
+    /* padding: 5px; */
+    border-radius: 50px;
+    font-size: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #9A998E;
+    background-color: #1B1913;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    text-align: center;
+}
+
+.changelog .log1 p {
+    color: #EDECEC;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+.link a {
+    color: #f54e00;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 30px;
+    margin-left: 160px;
+}
+
+.link a:hover {
+    color: #9B2C0C;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #14120B;
+    margin-top: 100px;
+}
+
+.home pre {
+    color: #EDECEC;
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin: 30px;
+    margin-left: 70px;
+    padding: 30px;
+}
+
+.home pre span {
+    color: #EDECEC;
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-left: -130px;
+    padding: 50px;
+}
+
+.home #cta {
+    height: 70px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #14120B;
+    background-color: #EDECEC;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.home #cta span {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.home #cta:hover {
+    background-color: #D7D6D5;
+    color: #14120B;
+}
+
+.home img {
+    height: 800px;
+    width: 1800px;
+    margin: 80px;
+    margin-left: 100px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.recent-highlights {
+    height: 1100px;
+    width: 100%;
+    background-color: #1B1913;
+    margin-top: 500px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    font-style: normal;
+    padding: 100px 200px;
+    left: 0px;
+}
+
+.recent-highlights .grid {
+    grid-column: 3/2;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 100px;
+}
+
+.recent-highlights .head-text-1 {
+    color: #EDECEC;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin: 80px;
+    margin-bottom: 630px;
+    background-position: sticky;
+    position: absolute;
+    z-index: 1;
+}
+
+.grid-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #EDECEC;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #201e18;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 20px;
+    width: 900px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.grid-2 p {
+    color: #9A998E;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+.grid-2 p span {
+    color: #EDECEC;
+    font-size: 22px;
+    font-weight: 00;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal
+}
+
+.grid-2 .date {
+    color: #9A998E;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+.grid-2:hover {
+    background-color: #25231c;
+    cursor: pointer;
+}
+
+.link-1 a {
+    color: #f54e00;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-top: 30px;
+    padding-top: 100px;
+}
+
+.link-1 a:hover {
+    color: #9B2C0C;
+}
+
+.download-button {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.download-button .container p {
+    color: #EDECEC;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    padding-top: 50px;
+}
+
+.download-button #cta-1 {
+    height: 70px;
+    width: 350px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #14120B;
+    background-color: #EDECEC;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.download-button #cta-1 span {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.download-button #cta-1:hover {
+    background-color: #D7D6D5;
+    color: #14120B;
+}
+
+.footer {
+background-color: #1B1913;
+  color: #eaeaea;
+  padding: 60px 80px 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.footer-col h4 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: CursorGothic, "CursorGothic Fallback", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-bottom: 14px;
+    color: #bdbdbd;
+}
+
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.footer-col a:hover {
+  opacity: 1;
+}
+
+/* bottom bar */
+.footer-bottom {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #bdbdbd;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-actions button {
+  background: #1c1a14;
+  color: #fff;
+  border: 1px solid #2a2821;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+}
