@@ -18,12 +18,15 @@ A curated collection of **beginner-friendly articles** that explain how the web 
 ### Assignments
 
 #### JavaScript Challenges
-Two comprehensive JavaScript learning paths with hands-on, story-based challenges:
+Comprehensive JavaScript learning paths with hands-on, story-based challenges:
 
 | Project | Focus | Challenges | Tests |
 |---------|-------|-----------|-------|
 | **[JS Conditionals Lab](./Assignments/JS/js-conditionals-neerajgir)** | `if/else`, `switch`, ternary, logical operators | 12 real-world scenarios | 166 tests |
 | **[JS Data Types Lab](./Assignments/JS/js-datatypes-foundation-neerajgir)** | String, Number, Array, Object methods | 12 Indian-themed challenges | 100 points |
+| **[JS Data Types Lab](./Assignments/JS/js-datatypes-neerajgir)** | String manipulation, Array & Object methods | 12 Indian-themed challenges | — |
+| **[JS Functions Lab](./Assignments/JS/js-functions-neerajgir)** | Function declaration, parameters, return values | 12 functional programming scenarios | — |
+| **[JS Loops Lab](./Assignments/JS/js-loops-neerajgir)** | `for`, `while`, `forEach`, nested loops | 12 iterative challenges | — |
 
 #### HTML & CSS Projects
 Practical frontend projects to master semantic HTML and styling:
@@ -53,7 +56,22 @@ Cohort/
 │       │   ├── tests/                          # Jest test files
 │       │   ├── package.json
 │       │   └── README.md
-│       └── js-datatypes-foundation-neerajgir/
+│       ├── js-datatypes-foundation-neerajgir/
+│       │   ├── src/                            # 12 challenge files
+│       │   ├── tests/                          # Jest test files
+│       │   ├── package.json
+│       │   └── README.md
+│       ├── js-datatypes-neerajgir/
+│       │   ├── src/                            # 12 challenge files
+│       │   ├── tests/                          # Jest test files
+│       │   ├── package.json
+│       │   └── README.md
+│       ├── js-functions-neerajgir/
+│       │   ├── src/                            # 12 challenge files
+│       │   ├── tests/                          # Jest test files
+│       │   ├── package.json
+│       │   └── README.md
+│       └── js-loops-neerajgir/
 │           ├── src/                            # 12 challenge files
 │           ├── tests/                          # Jest test files
 │           ├── package.json
@@ -119,6 +137,10 @@ Articles → Understand concepts
 JS Conditionals → Master control flow
     ↓
 JS Data Types → Master built-in methods
+    ↓
+JS Functions → Master functional programming
+    ↓
+JS Loops → Master iteration
     ↓
 HTML/CSS → Build front-end skills
     ↓
